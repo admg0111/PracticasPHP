@@ -2,7 +2,7 @@
 
 
 ## Formulario HTML
-
+````html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,11 +42,11 @@
     </form>
 </body>
 </html>
-
+```
 
 
 ## Instrucciones en PHP
-
+```php
 <?php
 
 $calculo = $_POST["select"];
@@ -65,3 +65,4 @@ if ($calculo == "Sumar"){
 
 echo "El resultado de la operación es: ".$resultado;
 
+```
