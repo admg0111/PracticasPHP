@@ -1,4 +1,4 @@
-# Calculadores con PHP
+# Calculador con PHP
 
 
 ## Formulario HTML
