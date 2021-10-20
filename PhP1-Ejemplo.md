@@ -2,7 +2,8 @@
 
 
 ## Formulario HTML
-````html
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,6 +47,7 @@
 
 
 ## Instrucciones en PHP
+
 ```php
 <?php
 
