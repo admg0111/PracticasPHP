@@ -1,0 +1,17 @@
+<?php
+
+$calculo = $_POST["select"];
+$num1 = $_POST["numero1"];
+$num2 = $_POST["numero2"];
+
+if ($calculo == "Sumar"){
+    $resultado = $num1 + $num2;
+}else if($calculo == "Restar"){
+    $resultado = $num1 - $num2;  
+}else if($calculo =="Multiplicar"){
+    $resultado = $num1 * $num2;  
+}else if($calculo == "Dividir"){
+    $resultado = $num1 / $num2;  
+}
+
+echo "El resultado de la operación es: ".$resultado;
