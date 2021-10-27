@@ -1,7 +1,7 @@
 # Ejercicios variados de PHP 2
 
 ## Tablas HTML personalizadas con PHP
-```php
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,4 +34,27 @@
     
 </body>
 </html>
+```
+```php
+  <?php
+   
+   $Nombre = $_POST["Nombre"];
+   $Apellido1 = $_POST["Apellido1"];
+   $Apellido2 = $_POST["Apellido2"];
+
+   echo "<table border=1>";
+                echo"<tr>";
+                        echo"<td><b>Nombre</b></td>";
+                        echo"<td><b>Apellido 1</b></td>";
+                        echo"<td><b>Apellido 2</b></td>";
+                    echo"</tr>";
+
+                    echo"<tr>";
+                        echo"<td>$Nombre</td>";
+                        echo"<td>$Apellido1</td>";
+                        echo"<td>$Apellido2</td>";
+                    echo"</tr>";
+
+                echo"</table>";
+    ?>
 ```
