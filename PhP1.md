@@ -103,6 +103,7 @@ saludar('Carlos');
         $Usuario2= array('Laura','Díaz','Castilla');    
 
                 echo "<table border=1>";
+                
                     echo"<tr>";
                         echo"<td><b>Nombre</b></td>";
                         echo"<td><b>Apellido 1</b></td>";
