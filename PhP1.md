@@ -70,3 +70,17 @@ $lista=array("Uno","Dos","Tres","Cuatro");
 </body>
 </html>
 ```
+## Función en php para saludar a usuarios
+```php
+<?php
+
+    function saludar($Saludado)
+    {
+        echo "Buenos días $Saludado<br>";
+    }
+
+saludar('Rocío');
+saludar('Carlos');
+
+?>
+```
