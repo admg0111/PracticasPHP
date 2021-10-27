@@ -22,3 +22,24 @@ if ($pos === false)
 
 ?>
 ```
+## Mostrar el contenido de un fichero error.log con PHP y seleccionar los [php:error]
+```php
+<?php
+
+$errorlogs= fopen("C:\\xampp\\apache\\logs\\error.log" , "r");
+$encontrar = '[php:error]';
+
+while (!feof($errorlogs)){
+
+    $lineas = fgets($errorlogs);
+    if (strpos($lineas,$encontrar) !== false){
+
+       echo $lineas;
+       echo "<br>";
+    }
+}
+
+fclose($errorlogs);
+
+?>
+```
