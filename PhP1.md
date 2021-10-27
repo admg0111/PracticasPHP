@@ -29,11 +29,11 @@ if ($pos === false)
 $errorlogs= fopen("C:\\xampp\\apache\\logs\\error.log" , "r");
 $encontrar = '[php:error]';
 
-while (!feof($errorlogs)){
-
+while (!feof($errorlogs))
+{
     $lineas = fgets($errorlogs);
-    if (strpos($lineas,$encontrar) !== false){
-
+    if (strpos($lineas,$encontrar) !== false)
+    {
        echo $lineas;
        echo "<br>";
     }
