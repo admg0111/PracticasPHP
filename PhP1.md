@@ -1,7 +1,7 @@
 # Ejercicios variados sobre PHP
 - Cadenas
-- Logs
-- Buscar en ficheros
+- Buscar en ficheros .log
+- Bucle FOR en php
 ---------------------------------------
 
 ## Analizar cadenas de caracteres con PHP
@@ -42,4 +42,31 @@ while (!feof($errorlogs))
 fclose($errorlogs);
 
 ?>
+```
+## Obtener mediante un bucle FOR y un array una lista ordenada en HTML
+
+```html
+<?php
+$lista=array("Uno","Dos","Tres","Cuatro");
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DocumentArray</title>
+</head>
+<body>
+    <ol>
+        <?php
+            foreach ($lista as $dato)
+            {
+                echo "<li>".$dato."</li>";
+            }
+        ?>
+    </ol>
+</body>
+</html>
 ```
