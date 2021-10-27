@@ -2,6 +2,7 @@
 - Cadenas
 - Buscar en ficheros .log
 - Bucle FOR en php
+- Funciones básicas
 ---------------------------------------
 
 ## Analizar cadenas de caracteres con PHP
