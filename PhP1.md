@@ -47,7 +47,7 @@ fclose($errorlogs);
 ```
 ## Obtener mediante un bucle FOR y un array una lista ordenada en HTML
 
-```html
+```php
 <?php
 $lista=array("Uno","Dos","Tres","Cuatro");
 ?>
