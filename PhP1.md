@@ -3,6 +3,7 @@
 - Buscar en ficheros .log
 - Bucle FOR en php
 - Funciones básicas
+- Tablas html y objetos array
 ---------------------------------------
 
 ## Analizar cadenas de caracteres con PHP
@@ -84,4 +85,45 @@ saludar('Rocío');
 saludar('Carlos');
 
 ?>
+```
+## Crear una tabla HTML con nombres y apellidos de personas utilizando objetos ARRAY
+```php
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+</head>
+<body> 
+    <?php
+    
+        $Usuario1= array('José','Minaya','Robles');
+        $Usuario2= array('Laura','Díaz','Castilla');    
+
+                echo "<table border=1>";
+                echo"<tr>";
+                        echo"<td><b>Nombre</b></td>";
+                        echo"<td><b>Apellido 1</b></td>";
+                        echo"<td><b>Apellido 2</b></td>";
+                    echo"</tr>";
+
+                    echo"<tr>";
+                        echo"<td>$Usuario1[0]</td>";
+                        echo"<td>$Usuario1[1]</td>";
+                        echo"<td>$Usuario1[2]</td>";
+                    echo"</tr>";
+
+                    echo"<tr>";
+                        echo"<td>$Usuario2[0]</td>";
+                        echo"<td>$Usuario2[1]</td>";
+                        echo"<td>$Usuario2[2]</td>";
+                    echo"</tr>";
+
+                echo"</table>";
+
+    ?>          
+</body>
+</html>
 ```
